@@ -20,8 +20,6 @@ Or install it yourself as:
 
 ## Usage
 
-1. Collect the users you want to watch
-
 ```ruby
 
 # your_controller.rb
@@ -31,9 +29,8 @@ users = %w(_gareth cardiffrb)
 @tweets = Twalk::Twalk.tweets_between(users)
 
 # your_view.html.erb
-
 @tweets.each do |tweet|
-  auto_link tweet.text
+  <div class="tweet">auto_link tweet.text</div>
 end
 ```    
 

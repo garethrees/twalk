@@ -14,4 +14,6 @@ Gem::Specification.new do |gem|
   gem.name          = "twalk"
   gem.require_paths = ["lib"]
   gem.version       = Twalk::VERSION
+
+  gem.add_dependency('twitter', '>= 2.0.0')
 end

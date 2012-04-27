@@ -20,13 +20,14 @@ Or install it yourself as:
 
 ## Usage
 
+- `gem install twitter` to get Tweets
+- `gem install twitter-text` for `auto_link`
+
 ```ruby
+nicknames = %w(_gareth cardiffrb)
+tweets = Twitter.home_timeline
 
-# your_controller.rb
-users = User.all.collect { |user| user.nickname }
-users = %w(_gareth cardiffrb)
-
-@tweets = Twalk::Twalk.tweets_between(users)
+@tweets = Twalk.tweets_between(nicknames, tweets)
 
 # your_view.html.erb
 @tweets.each do |tweet|

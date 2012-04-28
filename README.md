@@ -6,7 +6,7 @@ The idea is that in some situations you may only want a [Twitter](http://twitter
 
 ## Installation
 
-Although you can get nicknames as you please, I've used the following
+Although you can get nicknames and tweets as you please, I've used the following:
 
     gem 'twitter       # To get tweets
     gem 'twalk'

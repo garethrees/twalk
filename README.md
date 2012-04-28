@@ -6,31 +6,22 @@ The idea is that in some situations you may only want a [Twitter](http://twitter
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Although you can get nicknames as you please, I've used the following
 
+    gem 'twitter       # To get tweets
     gem 'twalk'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install twalk
+    gem 'twitter-text' # To format tweets
 
 ## Usage
 
-- `gem install twitter` to get Tweets
-- `gem install twitter-text` for `auto_link`
-
 ```ruby
 nicknames = %w(_gareth cardiffrb)
-tweets = Twitter.home_timeline
+tweets = Twitter.home_timeline.collect { |tweet| tweet.text }
 
-@tweets = Twalk.tweets_between(nicknames, tweets)
+@twalks = Twalk.tweets_between(nicknames, tweets)
 
 # your_view.html.erb
-@tweets.each do |tweet|
+@twalks.each do |tweet|
   <div class="tweet">auto_link tweet.text</div>
 end
 ```    

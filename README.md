@@ -1,5 +1,7 @@
 # Twalk
 
+[![Code Climate](https://codeclimate.com/github/garethrees/twalk.png)](https://codeclimate.com/github/garethrees/twalk)
+
 Twalk displays tweets of your followers who are talking to one another.
 
 The idea is that in some situations you may only want a [Twitter](http://twitter.com) feed that shows when your followers are t_w_alking to each other, rather than seeing their random tweets to no one.
